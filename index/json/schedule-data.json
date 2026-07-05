@@ -1,0 +1,58 @@
+[
+    {
+        "day": "Monday",
+        "time": "--",
+        "game": "offline",
+        "isActive": false,
+        "isSpecialEvent": false,
+        "isCollab": false
+    },
+    {
+        "day": "Tuesday",
+        "time": "--",
+        "game": "offline",
+        "isActive": false,
+        "isSpecialEvent": false,
+        "isCollab": false
+    },
+    {
+        "day": "Wednesday",
+        "time": "--",
+        "game": "offline",
+        "isActive": false,
+        "isSpecialEvent": false,
+        "isCollab": false
+    },
+    {
+        "day": "Thursday",
+        "time": "--",
+        "game": "offline",
+        "isActive": false,
+        "isSpecialEvent": false,
+        "isCollab": false
+    },
+    {
+        "day": "Friday",
+        "time": "--",
+        "game": "offline",
+        "isActive": false,
+        "isSpecialEvent": false,
+        "isCollab": false
+    },
+        {
+        "day": "Saturday",
+        "time": "--",
+        "game": "offline",
+        "isActive": false,
+        "isSpecialEvent": false,
+        "isCollab": false
+    },
+        {
+        "day": "Sunday",
+        "time": "9:00 PM",
+        "game": "Hunt Showdown",
+        "isActive": true,
+        "isSpecialEvent": false,
+        "isCollab": false
+    }
+]

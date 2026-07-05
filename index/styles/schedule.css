@@ -1,0 +1,204 @@
+/* Schedule Header Styling */
+.schedule-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.timezone-notice {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* Back Button Layout */
+.back-btn {
+    align-self: flex-start;
+    color: #888;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    transition: color 0.2s;
+}
+
+.back-btn:hover {
+    color: var(--accent); /* Uses your main page purple */
+}
+
+/* Schedule Layout Container */
+.schedule-container {
+    width: 100%;
+    max-width: 600px; /* Marginally wider than linktree for layout space */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Standard Card Setup */
+.day-card {
+    background: var(--card);
+    border: 1px solid #222;
+    padding: 20px;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    transition: transform 0.2s ease;
+}
+
+.day-name {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.stream-time {
+    color: #fff;
+    font-weight: 600;
+}
+
+.stream-game {
+    color: #aaa;
+    font-size: 0.95rem;
+}
+
+/* Live Days vs Offline Styling */
+.day-card.active {
+    border-left: 4px solid var(--accent); /* Purple stripe on stream days */
+}
+
+.day-card.special {
+    border-left: 4px solid var(--special); /* TikTok/Neon Pink stripe for special event nights */
+    box-shadow: 0 0 15px rgba(254, 44, 85, 0.15);
+}
+
+.day-card.collab {
+    border-left: 4px solid var(--collab); /* TikTok/Neon Pink stripe for special event nights */
+    box-shadow: 0 0 15px rgba(254, 44, 85, 0.15);
+}
+
+.day-card.offline {
+    opacity: 0.5; /* Makes offline days visually take a back seat */
+}
+
+/* Small Indicator Tags */
+.status-tag {
+    position: absolute;
+    top: -10px;
+    right: 15px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 20px;
+    background: #333;
+    color: #aaa;
+}
+
+.status-tag.live {
+    background: var(--accent);
+    color: white;
+}
+
+.status-tag.event {
+    background: #fe2c55;
+    color: white;
+}
+
+/* Base settings for the dynamic live status area */
+.status-banner {
+    display: inline-flex;
+    margin-top: 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+}
+
+/* When Live: Style the container into a sleek interactive button */
+.status-live-btn {
+    background: rgba(254, 44, 85, 0.12);
+    border: 1px solid rgba(254, 44, 85, 0.4);
+    box-shadow: 0 0 10px rgba(254, 44, 85, 0.1);
+    cursor: pointer;
+}
+
+/* Ensure the link covers the entire inner area of the button padding */
+.live-button-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 20px;
+    color: #fe2c55;
+    text-decoration: none; /* Removes the underline */
+    width: 100%;
+}
+
+/* Hover effects for the live button */
+.status-live-btn:hover {
+    background: rgba(254, 44, 85, 0.25);
+    border-color: rgba(254, 44, 85, 0.8);
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 4px 15px rgba(254, 44, 85, 0.3); /* Neon glow pulse */
+}
+
+/* Interactive accent element inside the button */
+.join-prompt {
+    margin-left: 10px;
+    background: #fe2c55;
+    color: #fff;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    transition: background 0.2s ease;
+}
+
+.status-live-btn:hover .join-prompt {
+    background: #fff;
+    color: #fe2c55;
+}
+
+/* Blinking dot for live status */
+.status-live-btn .status-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fe2c55;
+    animation: blink 1.5s infinite;
+}
+
+/* Offline display mode padding maintenance */
+.status-offline {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--hb, #666);
+    padding: 10px 20px;
+    align-items: center;
+    gap: 12px;
+}
+.status-offline .status-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--hb, #666);
+}
+
+@keyframes blink {
+    0% { opacity: 0.4; }
+    50% { opacity: 1; }
+    100% { opacity: 0.4; }
+}
+
+/* Responsive Mobile Layout adjustments */
+@media (max-width: 500px) {
+    .day-card {
+        grid-template-columns: 1fr; /* Switch to stack top-to-bottom on tiny phone screens */
+        text-align: center;
+        padding-top: 25px;
+    }
+    .status-tag {
+        right: 50%;
+        transform: translateX(50%); /* Centers the status badge on mobile */
+    }
+}

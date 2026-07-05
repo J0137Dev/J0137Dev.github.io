@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stream Schedule | J_0137</title>
+    <!-- Links to your existing styles and the new schedule styles -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/schedule.css">
+    <link rel="stylesheet" href="schedule.css"
+</head>
+<body>
+
+    <main class="schedule-container">
+    
+<!-- For standard countdowns: leave data-status="offline" -->
+<!-- When the Special Event is LIVE: change it to data-status="live" -->
+<div class="day-card active" data-day="Friday" data-time="7:00 PM" data-status="offline">
+    <div class="day-info">
+        <span class="day-name">Friday</span>
+        <span class="stream-game">Special Event Stream! 🎉</span>
+    </div>
+    <div class="card-timer">
+        <div class="unit"><span class="days">00</span><p>d</p></div>
+        <div class="unit"><span class="hours">00</span><p>h</p></div>
+        <div class="unit"><span class="minutes">00</span><p>m</p></div>
+        <div class="unit"><span class="seconds">00</span><p>s</p></div>
+    </div>
+    <span class="status-tag">7:00 PM</span>
+</div>
+
+</main>
+
+<script>
+function runLiveCountdown() {
+    const now = new Date();
+    const dayMap = { sunday: 0, monday: 1, tuesday: 2, wednesday: 3, thursday: 4, friday: 5, saturday: 6 };
+
+    const activeCard = document.querySelector('.day-card.active');
+    if (!activeCard) return;
+
+    // Check if you manually set the card to live for a special event
+    const manualStatus = activeCard.getAttribute('data-status');
+    
+    if (manualStatus === 'live') {
+        activeCard.classList.add('is-live'); 
+        activeCard.querySelector('.status-tag').innerText = "🔴 LIVE NOW!";
+        activeCard.querySelector('.days').innerText = "00";
+        activeCard.querySelector('.hours').innerText = "00";
+        activeCard.querySelector('.minutes').innerText = "00";
+        activeCard.querySelector('.seconds').innerText = "00";
+        return; // Stops calculation here since you are forcing it to be live
+    }
+
+    // Otherwise, run normal countdown logic and show offline status
+    activeCard.classList.remove('is-live');
+    
+    const targetDayStr = activeCard.getAttribute('data-day').toLowerCase().trim();
+    const targetTimeStr = activeCard.getAttribute('data-time').toLowerCase().trim();
+    const targetDayNum = dayMap[targetDayStr];
+    
+    const timeMatch = targetTimeStr.match(/(\d+):(\d+)\s*(am|pm)/);
+    if (!timeMatch) return;
+
+    let hours = parseInt(timeMatch[1]);
+    const minutes = parseInt(timeMatch[2]);
+    const ampm = timeMatch[3];
+
+    if (ampm === 'pm' && hours < 12) hours += 12;
+    if (ampm === 'am' && hours === 12) hours = 0;
+
+    let targetDate = new Date();
+    targetDate.setHours(hours, minutes, 0, 0);
+
+    let daysAhead = (targetDayNum - now.getDay() + 7) % 7;
+    if (daysAhead === 0 && now.getTime() > targetDate.getTime()) {
+        daysAhead = 7;
+    }
+    
+    targetDate.setDate(now.getDate() + daysAhead);
+    const distance = targetDate.getTime() - now.getTime();
+
+    const d = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const s = Math.floor((distance % (1000 * 60)) / 1000);
+
+    activeCard.querySelector('.days').innerText = d.toString().padStart(2, '0');
+    activeCard.querySelector('.hours').innerText = h.toString().padStart(2, '0');
+    activeCard.querySelector('.minutes').innerText = m.toString().padStart(2, '0');
+    activeCard.querySelector('.seconds').innerText = s.toString().padStart(2, '0');
+    
+    activeCard.querySelector('.status-tag').innerText = "OFFLINE";
+}
+
+setInterval(runLiveCountdown, 1000);
+runLiveCountdown();
+</script>
+
+
+</body>
+</html>

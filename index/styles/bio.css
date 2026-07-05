@@ -1,0 +1,98 @@
+/* Container Layout */
+.bio-container {
+    max-width: 600px;
+    margin: 80px auto 40px auto;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Back Button Positioning */
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+.back-btn:hover {
+    color: #fe2c55;
+}
+
+/* Profile Header Styles */
+.bio-header {
+    margin-bottom: 30px;
+}
+
+.avatar-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.bio-avatar {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 3px solid #fe2c55;
+    object-fit: cover;
+    box-shadow: 0 0 15px rgba(254, 44, 85, 0.3);
+}
+
+.bio-title {
+    margin: 15px 0 5px 0;
+    font-size: 2rem;
+    letter-spacing: 0.5px;
+}
+
+.bio-subtitle {
+    color: #fe2c55;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+/* Formatting Components */
+.bio-divider {
+    border: 0;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 25px 0;
+}
+
+.bio-content {
+    text-align: left;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #cccccc;
+}
+
+.bio-loading {
+    color: #666666;
+    text-align: center;
+}
+
+/* Central Action Button styling */
+.action-btn {
+    display: inline-block;
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.action-btn:hover {
+    border-color: #fe2c55;
+    color: #fe2c55;
+    transform: translateY(-1px);
+}

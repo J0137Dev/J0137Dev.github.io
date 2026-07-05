@@ -5,6 +5,8 @@
     --text: #ffffff; 
     --accent: #9146ff; 
     --hb: #434954;
+    --collab:#fe2c55;
+    --special:#00f0ff;
 }
 
 /* Base Styles */
@@ -32,11 +34,27 @@ h1 {
     margin-bottom: 20px; 
 }
 
-.bio {
+.about {
     color: var(--text);
     font-size: 1.2rem;
     margin: 6px;
 }
+
+.about-link {
+    text-decoration: none;
+}
+
+.about-link {
+    color: var(--text);
+}
+
+/* Make it slightly grow or glow when a user hovers over it */
+.about-link:hover h4 {
+    transform: scale(1.2);
+    text-shadow: 0 0 10px #9146ff80;
+    transition: all 0.2s ease;
+}
+
 
 /* Header & Layout Components */
 .main-header {
@@ -249,4 +267,66 @@ h1 {
     font-size: 0.8rem;
     color: #555555;
     margin: 0;
+}
+
+/* Removes the ugly default underline and keeps the text styles intact */
+.schedule-link {
+    text-decoration: none;
+    display: inline-block; /* Makes the click area perfect */
+}
+
+/* Make it slightly grow or glow when a user hovers over it */
+.schedule-link:hover h4 {
+    transform: scale(1.05);
+    text-shadow: 0 0 10px #9146ff80;
+    transition: all 0.2s ease;
+}
+
+/* Responsive Mobile Layout adjustments */
+@media (max-width: 500px) {
+    .day-card {
+        grid-template-columns: 1fr; /* Switch to stack top-to-bottom on tiny phone screens */
+        text-align: center;
+        padding-top: 25px;
+    }
+    .status-tag {
+        right: 50%;
+        transform: translateX(50%); /* Centers the status badge on mobile */
+    }
+}
+
+/* Live status layout transformation overrides */
+.twitch.live-now {
+    border: 2px solid #fe2c55 !important; /* Eye-catching crimson stream accent boundary */
+    box-shadow: 0 0 15px rgba(254, 44, 85, 0.4);
+    animation: live-pulse 2s infinite ease-in-out;
+    position: relative;
+}
+
+/* Make the text change cleanly and draw focus */
+.twitch.live-now h4 {
+    color: #fe2c55;
+    font-weight: bold;
+}
+
+/* Hover effects when live */
+.twitch.live-now:hover {
+    transform: scale(1.04) translateY(-3px);
+    box-shadow: 0 5px 25px rgba(254, 44, 85, 0.6);
+}
+
+/* Neon pulsing loop animation for your stream alert card */
+@keyframes live-pulse {
+    0% {
+        box-shadow: 0 0 10px rgba(254, 44, 85, 0.3);
+        border-color: rgba(254, 44, 85, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 25px rgba(254, 44, 85, 0.6);
+        border-color: rgba(254, 44, 85, 1);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(254, 44, 85, 0.3);
+        border-color: rgba(254, 44, 85, 0.5);
+    }
 }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | J0137Dev</title>
+    <!-- Links to your main styles and your specific bio styles -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/bio.css">
+    <script src="scripts/bio.js" defer></script>
+</head>
+<body>
+
+    <!-- Back Button -->
+    <a href="main.html" class="back-btn">← Back to Links</a>
+
+    <div class="bio-container">
+        
+        <!-- Profile Avatar Section -->
+        <header class="bio-header">
+            <div class="avatar-wrapper">
+                <img src="source/avatar-placeholder.png" alt="J0137Dev Avatar" class="bio-avatar">
+            </div>
+            <h1 class="bio-title">J0137Dev</h1>
+            <p class="bio-subtitle">Programmer & Streamer</p>
+        </header>
+
+        <hr class="bio-divider">
+
+        <!-- Detailed Bio Content Blocks (Data loads here dynamically) -->
+        <main class="bio-content" id="dynamic-bio-box">
+            <p class="bio-loading">Loading bio description details...</p>
+        </main>
+
+    </div>
+
+    <!-- Reusable Shared Footer Container -->
+    <footer class="site-footer" id="main-footer"></footer>
+
+</body>
+</html>
