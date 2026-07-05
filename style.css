@@ -1,0 +1,252 @@
+/* Root Variables */
+:root { 
+    --bg: #0f0f0f; 
+    --card: #1a1a1a; 
+    --text: #ffffff; 
+    --accent: #9146ff; 
+    --hb: #434954;
+}
+
+/* Base Styles */
+body { 
+    font-family: 'Segoe UI', sans-serif; 
+    background: var(--bg); 
+    color: var(--text); 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    padding: 10px 40px; 
+    margin: 0; 
+}
+
+/* Typography */
+h1 { 
+    color: var(--text);
+    font-size: 2.5rem; 
+    margin-bottom: 5px; 
+}
+
+.intro { 
+    color: var(--text); 
+    font-size: 1.5rem; 
+    margin-bottom: 20px; 
+}
+
+.bio {
+    color: var(--text);
+    font-size: 1.2rem;
+    margin: 6px;
+}
+
+/* Header & Layout Components */
+.main-header {
+    position: relative; 
+    width: 100vw; 
+    height: auto; 
+    overflow: hidden; 
+    padding-bottom: 5%;
+}
+
+.profile-pic { 
+    width: 96px; 
+    height: 96px; 
+    border-radius: 50%; 
+    border: 3px solid var(--accent); 
+    margin-bottom: 15px; 
+}
+
+/* Links & Buttons */
+.links-container { 
+    width: 100%; 
+    max-width: 400px; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 15px; 
+    text-align: center;
+}
+
+.link { 
+    background: var(--card); 
+    padding: 16px; 
+    text-align: center; 
+    border-radius: 12px; 
+    text-decoration: none; 
+    color: white; 
+    font-weight: 600; 
+    border: 1px solid #333; 
+    transition: 0.2s; 
+}
+
+.link:hover { 
+    transform: translateY(-3px); 
+    border-color: var(--accent); 
+    background: #252525; 
+}
+
+/* Social Media Placeholders */
+
+/*discord button*/
+.discord { 
+    background: var(--card); 
+    padding: 16px; 
+    text-align: center; 
+    border-radius: 12px; 
+    text-decoration: none; 
+    color: white; 
+    font-weight: 600; 
+    box-shadow: 0 0 10px #5865F2; 
+    transition: 0.2s; 
+}
+
+.discord:hover { 
+    transform: translateY(-3px);
+    background: var(--hb); 
+    color: var(--bg);
+}
+
+/*twitch button*/
+.twitch { 
+    background: var(--card); 
+    padding: 16px; 
+    text-align: center; 
+    border-radius: 12px; 
+    text-decoration: none; 
+    color: white; 
+    font-weight: 600; 
+    box-shadow: 0 0 10px #9146ff; 
+    transition: 0.2s; 
+}
+
+.twitch:hover { 
+    transform: translateY(-3px); 
+    background: var(--hb); 
+    color: var(--bg);
+}
+
+/*tiktok button*/
+.tiktok { 
+    background: var(--card); 
+    padding: 16px; 
+    text-align: center; 
+    border-radius: 12px; 
+    text-decoration: none; 
+    color: white; 
+    font-weight: 600; 
+    box-shadow: -2px -2px 8px #25f4ee, 2px 2px 8px #fe2c55;
+    transition: 0.2s; 
+}
+
+.tiktok:hover { 
+    transform: translateY(-3px); 
+    color: var(--bg); 
+    background: var(--hb); 
+}
+
+/*youtube button*/
+.youtube { 
+    background: var(--card); 
+    padding: 16px; 
+    text-align: center; 
+    border-radius: 12px; 
+    text-decoration: none; 
+    color: white; 
+    font-weight: 600; 
+    box-shadow: 0 0 10px #ff0000; 
+    transition: 0.2s; 
+}
+
+.youtube:hover { 
+    transform: translateY(-3px); 
+    color: var(--bg); 
+    background: var(--hb); 
+}
+
+/* Footer */
+.site-footer {
+    width: 100%;
+    background-color: var(--bg); /* Extra dark to fade out nicely at the bottom */
+    color: #b3b3b3;            /* Slightly brighter text for readability */
+    padding: 50px 20px 30px 20px;
+    margin-top: 100px;         /* Lots of space below your main social buttons */
+    border-top: 2px solid #1a1a1a;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-content {
+    max-width: 450px;          /* Clean layout alignment with link buttons */
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* Streamer Branding */
+.footer-logo {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.footer-bio {
+    font-size: 0.9rem;
+    color: #888888;
+    margin: -10px 0 0 0;
+}
+
+/* Schedule Info Box */
+.stream-schedule h4 {
+    color: var(--accent);     /* Ties into your stream's signature purple tint */
+    margin: 0 0 6px 0;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.stream-schedule p {
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+/* Sponsor / Business Contact Area */
+.business-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 0.85rem;
+    color: #777777;
+}
+
+.biz-email {
+    color: #ffffff;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+/* Glow effect when brands hover over your email */
+.biz-email:hover {
+    color: var(--accent);
+    text-shadow: 0 0 8px #9146ff80;
+}
+
+/* Divider Line */
+.footer-divider {
+    border: 0;
+    height: 1px;
+    background: #1a1a1a;
+    width: 100%;
+    margin: 10px 0 0 0;
+}
+
+/* Minor Technical Text */
+.copyright {
+    font-size: 0.8rem;
+    color: #555555;
+    margin: 0;
+}

@@ -4,26 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comunity | Links</title>
-    <style>
-        :root { --bg: #0f0f0f; --card: #1a1a1a; --text: #ffffff; --accent: #9146ff; }
-        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); display: flex; flex-direction: column; align-items: center; padding: 50px 20px; margin: 0; }
-        .profile-pic { width: 96px; height: 96px; border-radius: 50%; border: 3px solid var(--accent); margin-bottom: 15px; }
-        h1 { font-size: 1.5rem; margin-bottom: 5px; }
-        p { color: #aaa; margin-bottom: 30px; font-size: 0.9rem; }
-        .links-container { width: 100%; max-width: 400px; display: flex; flex-direction: column; gap: 15px; text-align: center;}
-        .link { background: var(--card); padding: 16px; text-align: center; border-radius: 12px; text-decoration: none; color: white; font-weight: 600; border: 1px solid #333; transition: 0.2s; }
-        .link:hover { transform: translateY(-3px); border-color: var(--accent); background: #252525; }
-        .tip-btn { background: var(--accent); border: none; margin-top: 10px; }
-        .tip-btn:hover { background: #4b54d9; }
-        .main-header {position: relative; width: 100vw; height: auto; overflow: hidden; padding-bottom: 5%;}
-        .site-footer {background-color: #111; color: #888; padding: 40px 20px; text-align: center; border-top: 1px solid #333; margin-top: 50px;}
-        .yt {}
-        .twitch {}
-        .discord {}
-        .tiktok {}
-        .paypal {}
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <header class="main-header">
          <video autoplay muted loop playsinline poster="source/J7.doc Banner.mp4" 
         style="width: 100vw; height: auto; border-radius: 40px; object-fit: cover;">
@@ -31,53 +14,66 @@
     </video>
 </header>
 <body>
-
-    <video autoplay muted loop playsinline poster="source/J0137pfp.png" 
-        style="width: 60vw; height: auto; border-radius: 50%; object-fit: cover;">
-        <source src="source/J7.doc PFP.mp4" type="video/mp4">
-        <img src="source/J0137pfp.png" alt="Profile Picture">
-    </video>
-    <!-- <img src="source/J0137pfp.png" alt="Avatar" class="profile-pic"> -->
     
-    <h1>J_0137</h1>
-    <p>¡welcome to the comunity!</p>
-    <p>¡Bienvenido a la comunidad!</p>
+    <h1>J0137Dev</h1>
+    <p class="intro">¡welcome to the comunity!</p>
 
+    <p class="bio">Intro</p>
     <div class="links-container">
-            <a href="https://discord.gg/kpUz8Eysvk" class="link">
+            <a href="https://discord.gg/HZg5Xqp2zr" class="discord">
                 <img src="source/a736b95923ddbc155e828651c92471292e40727655d770a06cec89c48ba0b41f/Discord_Symbol_Color/Discord-Symbol-Blurple.svg" 
                 alt="discord logo" style="max-width: 100px; max-height: auto;">
-                <h4>The Discord server</h4>
+                <h4>Discord server</h4>
             </a>
 
-        <a href="https://www.twitch.tv/j_0137" class="link">
+        <a href="https://www.twitch.tv/j_0137" class="twitch">
             <img src="source/Twitch-Brand/Twitch Brand/Twitch Logos/01. Twitch Wordmark/02. Flat Wordmark/01. Twitch Purple/twitch_wordmark_flat_purple.svg"
             alt="twitch logo" style="width: 100px; height: auto;">
             <h4>Twitch Chanel</h4>
         </a>
 
-        <a href="https://www.tiktok.com/@j_0137tk_cp?is_from_webapp=1&sender_device=pc" class="link">
+        <a href="https://www.tiktok.com/@j0137dev" class="tiktok">
             <img src="source/logo-pack/Dev Portal Logo Pack/TikTok Logo Pack/TikTok ΓÇô Icons/TikTok_Icon_Black_Circle.png"
             alt="tiktok logo" style="width: 100px; height: auto;">
             <h4>tiktok Chanel</h4>
         </a>
 
-        <a href="https://www.youtube.com/channel/UC6sqggzrnmzNX7BqiFc9Bgg" class="link">
+        <a href="https://www.youtube.com/channel/UC6sqggzrnmzNX7BqiFc9Bgg" class="youtube">
             <img src="source/youtube-icon/YouTube_Icon/Digital/01 Red/yt_icon_red_digital.png"
             alt="yotube logo" style="width: 100px; height: auto;">
             <h4>YouTube Chanel</h4>
         </a>
 
-        <!-- <a href="URL_TWITTER" class="link">Twitter / X</a> -->
+        <!-- <a href="URL_TWITTER" class="twitter">Twitter / X</a> -->
 
-        <a href="https://streamelements.com/j_0137/tip?tipping_activation_response=success&email=zangetsu.0137@gmail.com&type=normal" class="link tip-btn">
+        <!-- <a href="https://streamelements.com/j_0137/tip?tipping_activation_response=success&email=zangetsu.0137@gmail.com&type=normal" class="link tip-btn">
             <img src="source/PayPal/PayPal/PayPal Logo/Horizontal/PP_logo_h_100x26.png" style="width: 100px; height: auto;">
             <h4>send Tip ☕(optional)</h4>
-        </a>
+        </a> -->
     </div>
 
-    <footer class="site-footer">
-        <p>© 2026 J0137Dev. Built with Tailwind CSS.</p>
-    </footer>
+<footer class="site-footer">
+    <div class="footer-content">
+        <!-- 1. Your community branding -->
+        <h3 class="footer-logo">J0137Dev</h3>
+        <p class="footer-bio">Live gaming, chaos, and good vibes. Join the community!</p>
+        
+        <!-- 2. Your Schedule -->
+        <div class="stream-schedule">
+            <h4>📅 Schedule</h4>
+            <p>Mon, Wed, Fri — Starting at 7 PM EST</p>
+        </div>
+
+        <!-- 3. Business Contact -->
+        <div class="business-contact">
+            <span>For business inquiries:</span>
+            <a href="mailto:your.email@example.com" class="biz-email">j0137dev.business@gmail.com</a>
+        </div>
+
+        <hr class="footer-divider">
+
+        <p class="copyright">&copy; 2026 J0137Dev. Built by a gamer/programer.</p>
+    </div>
+</footer>
 </body>
 </html>
