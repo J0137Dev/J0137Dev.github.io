@@ -1,4 +1,4 @@
-// scripts/schedule.js
+
 async function loadManagedSchedule() {
     try {
         // Fetch the external JSON configuration data file
@@ -52,48 +52,6 @@ async function loadManagedSchedule() {
     }
 }
 
-// Twitch API Status Check Configuration
-const TWITCH_USERNAME = 'j0137dev'; 
-const CLIENT_ID = 'YOUR_TWITCH_CLIENT_ID'; 
-const ACCESS_TOKEN = 'YOUR_APP_ACCESS_TOKEN'; 
-
-async function checkTwitchStatus() {
-    const banner = document.getElementById('live-status-banner');
-    const bannerText = document.getElementById('status-banner-text');
-    
-    if (!banner || !bannerText) return;
-
-    try {
-        const response = await fetch(`https://api.twitch.tv/helix/streams?user_login=${TWITCH_USERNAME}`, {
-            headers: {
-                'Client-ID': CLIENT_ID,
-                'Authorization': `Bearer ${ACCESS_TOKEN}`
-            }
-        });
-        
-        const data = await response.json();
-        
-        if (data.data && data.data.length > 0) {
-            const streamInfo = data.data[0];
-            banner.className = "status-banner status-live-btn";
-            banner.innerHTML = `
-                <a href="https://twitch.tv/${TWITCH_USERNAME}" target="_blank" class="live-button-link">
-                    <span class="status-dot"></span>
-                    <span>LIVE NOW: Playing <strong>${streamInfo.game_name}</strong></span>
-                    <span class="join-prompt">Join Stream →</span>
-                </a>
-            `;
-        } else {
-            banner.className = "status-banner status-offline";
-            banner.innerHTML = `<span class="status-dot"></span><span>CURRENTLY OFFLINE</span>`;
-        }
-    } catch (error) {
-        console.error("Twitch API Error:", error);
-        banner.className = "status-banner status-offline";
-        bannerText.innerText = "Status temporarily unavailable";
-    }
-}
-
 // Load footer content dynamically
 function loadFooter() {
     fetch('footers/footer.html')
@@ -108,6 +66,5 @@ function loadFooter() {
 // Run everything when the DOM is fully loaded
 window.addEventListener('DOMContentLoaded', () => {
     loadManagedSchedule();
-    checkTwitchStatus();
     loadFooter();
 });

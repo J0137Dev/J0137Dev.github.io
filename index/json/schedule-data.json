@@ -49,9 +49,9 @@
     },
         {
         "day": "Sunday",
-        "time": "9:00 PM",
-        "game": "Hunt Showdown",
-        "isActive": true,
+        "time": "--",
+        "game": "offline",
+        "isActive": false,
         "isSpecialEvent": false,
         "isCollab": false
     }
