@@ -1,32 +1,32 @@
 [
     {
         "day": "Monday",
-        "time": "--",
-        "game": "offline",
-        "isActive": false,
+        "time": "11:00 pm - 5:00 am",
+        "game": "Hunt Showdown",
+        "isActive": true,
         "isSpecialEvent": false,
         "isCollab": false
     },
     {
         "day": "Tuesday",
-        "time": "--",
-        "game": "offline",
-        "isActive": false,
+        "time": "17:00 - 06:00",
+        "game": "Hunt Showdown",
+        "isActive": true,
         "isSpecialEvent": false,
         "isCollab": false
     },
     {
         "day": "Wednesday",
-        "time": "--",
-        "game": "offline",
-        "isActive": false,
+        "time": "17:00 - 06:00",
+        "game": "Hunt Showdown",
+        "isActive": true,
         "isSpecialEvent": false,
         "isCollab": false
     },
     {
         "day": "Thursday",
         "time": "--",
-        "game": "offline",
+        "game": "offline/working",
         "isActive": false,
         "isSpecialEvent": false,
         "isCollab": false
@@ -34,7 +34,7 @@
     {
         "day": "Friday",
         "time": "--",
-        "game": "offline",
+        "game": "offline/working",
         "isActive": false,
         "isSpecialEvent": false,
         "isCollab": false
@@ -42,7 +42,7 @@
         {
         "day": "Saturday",
         "time": "--",
-        "game": "offline",
+        "game": "offline/working",
         "isActive": false,
         "isSpecialEvent": false,
         "isCollab": false

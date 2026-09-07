@@ -1,15 +1,15 @@
 [
     {
         "title": "Who I Am",
-        "text": "Welcome to the command center! I'm a computer science graduate, software developer, and a beginner content creator streaming a mix of tactical FPS, deep strategy titles, and challenging RPGs."
+        "text": "Welcome to the command center! I'm a programmer building custom web and mobile applications. Beyond the code, I'm a content creator broadcasting a mix of tactical FPS, deep strategy titles, and challenging RPGs."
     },
     {
         "title": "The Stream & Projects",
-        "text": "When I'm not configuring streaming assets, debugging automated chat scripts, or custom-building utilities, you can catch me live interacting as a casual sci-fi survivor anomaly. This space serves as the central hub connecting all my development projects, gaming communities, and live networks."
+        "text": "When I'm not configuring broadcast assets, developing apps, or writing custom automation scripts, you can catch me live-streaming as a casual sci-fi survivor anomaly. This space serves as the central hub connecting my development projects, gaming community, and live networks."
     },
     {
-        "title": "Tech Stack & Core Layout",
-        "text": "> Languages: C++, C#, Python, JS, HTML/CSS<br>> Environment: Custom Automation Tools & Web Projects",
+        "title": "Tech Stack & Core Systems",
+        "text": "> Languages: C++, C#, Python, JS, HTML/CSS, JavaScript, TypeScript, Java, PHP <br>> Environment: Web & Mobile Architecture, Custom Automation",
         "isMonospace": true
     }
 ]
