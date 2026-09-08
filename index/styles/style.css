@@ -329,4 +329,27 @@ h1 {
         box-shadow: 0 0 10px rgba(254, 44, 85, 0.3);
         border-color: rgba(254, 44, 85, 0.5);
     }
+
+    
+}
+
+.lore {
+    color: var(--text);
+    font-size: 1.2rem;
+    margin-top: -40px;
+}
+
+.lore-link {
+    text-decoration: none;
+}
+
+.lore-link {
+    color: var(--text);
+}
+
+/* Make it slightly grow or glow when a user hovers over it */
+.lore-link:hover h4 {
+    transform: scale(1.2);
+    text-shadow: 0 0 10px #9146ff80;
+    transition: all 0.2s ease;
 }

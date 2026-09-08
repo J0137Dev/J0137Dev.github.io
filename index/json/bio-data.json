@@ -1,15 +1,24 @@
 [
     {
-        "title": "Who I Am",
-        "text": "Welcome to the command center! I'm a programmer building custom web and mobile applications. Beyond the code, I'm a content creator broadcasting a mix of tactical FPS, deep strategy titles, and challenging RPGs."
+        "title": "Welcome to the command center!",
+        "text": "I'm the programmer and creator behind J0137Dev. Beyond developing web and mobile applications, I'm a content creator broadcasting a mix of tactical FPS, deep strategy titles, challenging RPGs, and random games."
+    },
+    {
+        "title": "My persona",
+        "text": "I'm a laid-back individual who loves diving into immersive worlds. On stream, I bring these experiences to life as a VTuber—broadcasting to the network as a casual sci-fi survivor anomaly."
     },
     {
         "title": "The Stream & Projects",
-        "text": "When I'm not configuring broadcast assets, developing apps, or writing custom automation scripts, you can catch me live-streaming as a casual sci-fi survivor anomaly. This space serves as the central hub connecting my development projects, gaming community, and live networks."
+        "text": "When I'm not configuring broadcast assets or writing custom automation scripts, my channel serves as the central hub connecting my development projects, my gaming community, and the ongoing sci-fi survival anomaly of my stream."
     },
     {
         "title": "Tech Stack & Core Systems",
-        "text": "> Languages: C++, C#, Python, JS, HTML/CSS, JavaScript, TypeScript, Java, PHP <br>> Environment: Web & Mobile Architecture, Custom Automation",
+        "text": "> Languages: C++, C#, Python, HTML/CSS, JavaScript, TypeScript, Java, PHP <br>> Environment: Web & Mobile Architecture, Custom Automation, Game Development",
+        "isMonospace": true
+    },
+        {
+        "title": "Games i play",
+        "text": "> Hunt Showdown, Call of Duty, Endfield, Arknights, Elden Ring, Helldivers 2, Palworld, No More Room in Hell 2, and more...",
         "isMonospace": true
     }
 ]

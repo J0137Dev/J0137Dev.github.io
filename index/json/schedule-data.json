@@ -1,15 +1,15 @@
 [
     {
         "day": "Monday",
-        "time": "11:00 pm - 5:00 am",
-        "game": "Hunt Showdown",
-        "isActive": true,
+        "time": "--",
+        "game": "offline",
+        "isActive": false,
         "isSpecialEvent": false,
         "isCollab": false
     },
     {
         "day": "Tuesday",
-        "time": "17:00 - 06:00",
+        "time": "12:00 - 06:00",
         "game": "Hunt Showdown",
         "isActive": true,
         "isSpecialEvent": false,
