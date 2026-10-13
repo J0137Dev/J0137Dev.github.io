@@ -12,6 +12,10 @@ async function loadBioContent() {
         container.innerHTML = ''; // Clear out the loading placeholder text
 
         bioData.forEach(section => {
+            const displayText = section.text.replace(/\bJayson\b/gi, word =>
+                `<span class="jayson-font">${word}</span>`
+            );
+
             // Check if this section needs a code/monospace look
             let textStyle = section.isMonospace 
                 ? 'font-family: monospace; font-size: 0.9rem; color: #888; background: rgba(0,0,0,0.2); padding: 12px; border-radius: 8px; margin: 0;'
@@ -24,7 +28,7 @@ async function loadBioContent() {
                         ${section.title}
                     </h3>
                     <p style="${textStyle}">
-                        ${section.text}
+                        ${displayText}
                     </p>
                 </section>
             `;

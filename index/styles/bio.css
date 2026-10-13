@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "Sarkaz Serif";
+    src: url("../source/SarkazSerif.ttf") format("truetype");
+    font-display: swap;
+}
+
+.jayson-font {
+    font-family: "Sarkaz Serif", serif;
+}
+
 /* Container Layout */
 .bio-container {
     max-width: 600px;

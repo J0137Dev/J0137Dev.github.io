@@ -1,15 +1,15 @@
 [
     {
         "title": "Welcome to the command center!",
-        "text": "I'm the programmer and creator behind J0137Dev. Beyond developing web and mobile applications, I'm a content creator broadcasting a mix of tactical FPS, deep strategy titles, challenging RPGs, and random games."
+        "text": "I'm Jayson, the user behind J7Dev. beyond being a streamer and a gamer i'm also a programer of web pages like this one and others i'm also a mobile applications developer and i intend to expand my skill and knoledge and share them with the community."
     },
     {
-        "title": "My persona",
-        "text": "I'm a laid-back individual who loves diving into immersive worlds. On stream, I bring these experiences to life as a VTuber—broadcasting to the network as a casual sci-fi survivor anomaly."
+        "title": "My persona as J7Dev",
+        "text": "I'm a individual who enjoys getting to inmersive in games just for fun and have a great time. On stream, I bring these experiences to life as a VTuber/PNGTuber—streamer to the network as a sci-fi survivor anomaly."
     },
     {
-        "title": "The Stream & Projects",
-        "text": "When I'm not configuring broadcast assets or writing custom automation scripts, my channel serves as the central hub connecting my development projects, my gaming community, and the ongoing sci-fi survival anomaly of my stream."
+        "title": "The Stream and vision",
+        "text": "When I'm streaming, I aim to create an engaging experience that combines my passion for gaming with my love for technology and creativity and also buld a community around these shared interests and push other to achive their goals sharing knoledge."
     },
     {
         "title": "Tech Stack & Core Systems",
@@ -18,7 +18,7 @@
     },
         {
         "title": "Games i play",
-        "text": "> Hunt Showdown, Call of Duty, Endfield, Arknights, Elden Ring, Helldivers 2, Palworld, No More Room in Hell 2, and more...",
+        "text": "> Hunt Showdown, Call of Duty, Arknights Endfield, Arknights, Elden Ring, Helldivers 2, Palworld, Deadlock, Monster Hunters, Kingdom Hearts, No Man's Sky, Arc Raiders, Fortnite, and many more...",
         "isMonospace": true
     }
 ]

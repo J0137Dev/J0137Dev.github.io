@@ -353,3 +353,22 @@ h1 {
     text-shadow: 0 0 10px #9146ff80;
     transition: all 0.2s ease;
 }
+
+/*discord button*/
+.github { 
+    background: var(--card); 
+    padding: 16px; 
+    text-align: center; 
+    border-radius: 12px; 
+    text-decoration: none; 
+    color: white; 
+    font-weight: 600; 
+    box-shadow: 0 0 10px #2334ef; 
+    transition: 0.2s; 
+}
+
+.github:hover { 
+    transform: translateY(-3px);
+    background: var(--hb); 
+    color: var(--bg);
+}

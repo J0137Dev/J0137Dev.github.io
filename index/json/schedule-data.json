@@ -9,16 +9,16 @@
     },
     {
         "day": "Tuesday",
-        "time": "12:00 - 06:00",
-        "game": "Hunt Showdown",
+        "time": "--",
+        "game": "offline",
         "isActive": true,
         "isSpecialEvent": false,
         "isCollab": false
     },
     {
         "day": "Wednesday",
-        "time": "17:00 - 06:00",
-        "game": "Hunt Showdown",
+        "time": "--",
+        "game": "offline",
         "isActive": true,
         "isSpecialEvent": false,
         "isCollab": false
@@ -26,7 +26,7 @@
     {
         "day": "Thursday",
         "time": "--",
-        "game": "offline/working",
+        "game": "offline or working",
         "isActive": false,
         "isSpecialEvent": false,
         "isCollab": false

@@ -1,4 +1,7 @@
 # social-hub
 J0137Dev.github.io
 
-stream web page
+page for the community 
+
+made mostly by me 
+Credit to: LensTM, lhclbt.
