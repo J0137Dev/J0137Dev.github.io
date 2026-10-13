@@ -11,7 +11,7 @@
         "day": "Tuesday",
         "time": "--",
         "game": "offline",
-        "isActive": true,
+        "isActive": false,
         "isSpecialEvent": false,
         "isCollab": false
     },
@@ -19,7 +19,7 @@
         "day": "Wednesday",
         "time": "--",
         "game": "offline",
-        "isActive": true,
+        "isActive": false,
         "isSpecialEvent": false,
         "isCollab": false
     },
